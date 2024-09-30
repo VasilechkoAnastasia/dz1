@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var q = ["Вы любите программирование?", "Вы интересуетесь дизайном?", "Вы знаете математику?", "Вы учитесь новому?", "Вы умеете плавать?"];
+        var s = [2, 1, 1, 1, 0]; 
+        var t = 0; 
+        for (var i = 0; i < q.length; i++) 
+        {
+            var a = prompt(q[i] + " (да/нет)").toLowerCase(); 
+            if (a == "да") {
+                t += s[i]; 
+            }
+        }
+        alert("Результат: " + t + " из " + s.length);
+    </script>
+</body>
+
+</html>
